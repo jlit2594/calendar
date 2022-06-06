@@ -18,21 +18,92 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <body class="bg">
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <div class="time-block">
+        <div class="hour" id="7am">
+          <p>7:00</p>
+          <div class="description"></div>
+          <button class="saveBtn">SAVE</button>
+        </div>
+        <div class="hour" id="8am">
+          <p>8:00</p>
+          <div class="description"></div>
+          <button class="saveBtn">SAVE</button>
+        </div>
+        <div class="hour" id="9am">
+          <p>9:00</p>
+          <div class="description"></div>
+          <button class="saveBtn">SAVE</button>
+        </div>
+        <div class="hour" id="10am">
+          <p>10:00</p>
+          <div class="description"></div>
+          <button class="saveBtn">SAVE</button>
+        </div>
+        <div class="hour" id="11am">
+          <p>11:00</p>
+          <div class="description"></div>
+          <button class="saveBtn">SAVE</button>
+        </div>
+        <div class="hour" id="12pm">
+          <p>12:00</p>
+          <div class="description"></div>
+          <button class="saveBtn">SAVE</button>
+        </div>
+        <div class="hour" id="1pm">
+          <p>1:00</p>
+          <div class="description"></div>
+          <button class="saveBtn">SAVE</button>
+        </div>
+        <div class="hour" id="2pm">
+          <p>2:00</p>
+          <div class="description"></div>
+          <button class="saveBtn">SAVE</button>
+        </div>
+        <div class="hour" id="3pm">
+          <p>3:00</p>
+          <div class="description"></div>
+          <button class="saveBtn">SAVE</button>
+        </div>
+        <div class="hour" id="4pm">
+          <p>4:00</p>
+          <div class="description"></div>
+          <button class="saveBtn">SAVE</button>
+        </div>
+        <div class="hour" id="5pm">
+          <p>5:00</p>
+          <div class="description"></div>
+          <button class="saveBtn">SAVE</button>
+        </div>
+        <div class="hour" id="6pm">
+          <p>6:00</p>
+          <div class="description"></div>
+          <button class="saveBtn">SAVE</button>
+        </div>
+        <div class="hour" id="7pm">
+          <p>7:00</p>
+          <div class="description"></div>
+          <button class="saveBtn">SAVE</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="dialog">
+      <p>Congratulations! The event you submitted has been saved!</p>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
