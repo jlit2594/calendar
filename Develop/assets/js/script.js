@@ -20,19 +20,10 @@ $(".description").on('click', function () {
 });
 
 function saveEvent () {
-    localStorage.setItem(textInput)
-    $("#dialog").dialog({
-        autoOpen: false,
-        modal: true,
-        title: "Event Saved!",
-        show: {
-            effect: "blind",
-            duration: 1000
-        }
-    });
+    localStorage.setItem(textInput);
 }
-$(".saveBtn").on('click', saveEvent)
 
+$(".ui-button").on('click', saveEvent)
 
 // currentTime.textContent = rightNow;
 setInterval(currentTime, 1000);
