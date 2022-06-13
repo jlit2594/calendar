@@ -43,8 +43,8 @@ function saveEvent () {
         nineAm: $("#nine-event").val(),
         tenAm: $("#ten-event").val(),
         elevenAm: $("#eleven-event").val(),
-        twelvePm: $("twelve-event").val(),
-        onePm: $("one-event").val(),
+        twelvePm: $("#twelve-event").val(),
+        onePm: $("#one-event").val(),
         twoPm: $("#two-event").val(),
         threePm: $("#three-event").val(),
         fourPm: $("#four-event").val(),
@@ -52,16 +52,15 @@ function saveEvent () {
         sixPm: $("#six-event").val(),
         sevenPm: $("#seven-pm-event").val()
     };
-
+    
     localStorage.setItem("events", JSON.stringify(eventDetails));
 };
 
 // When the page is loaded, the saved events populate. If there are no events, nothing happens.
 function loadEvents () {
+    events = JSON.parse(localStorage.getItem('events'));
+    
     if (localStorage.getItem('events') !== null) {
-
-        events = JSON.parse(localStorage.getItem('events'));
-        
         const eventBlock = {
             seven: document.querySelector("#seven-event"),
             eight: document.querySelector("#eight-event"),
