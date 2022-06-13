@@ -1,3 +1,4 @@
+/* Universal values */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -15,6 +16,7 @@ textarea{
   padding: 10px;
 }
 
+/* Most of these are part of the starter code */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -50,7 +52,6 @@ textarea{
   display: flex;
   justify-content: space-between;
   height: 100px;
-
 }
 
 .hour p {
@@ -59,6 +60,7 @@ textarea{
   display: flex;
   font-size: 24px;
   font-weight: bold;
+  text-shadow: 0 0 3px black;
 }
 
 .past {
@@ -85,35 +87,4 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
-}
-
-.ui-dialog {
-  border: solid 5px black;
-  border-radius: 15px;
-  background-color: #212529;
-
-  /* flex-direction: column;
-  align-items: center; */
-}
-
-.ui-dialog-titlebar {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 5px solid black;
-}
-
-.ui-dialog-title {
- font-size: 24px;
-}
-
-.ui-dialog-content {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-}
-
-.ui-button {
-  border-left: 1px solid black;
-  background-color: #06AED5;
-  color: white;
 }

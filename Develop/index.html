@@ -26,100 +26,84 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p>Blocks in red are overdue, while blocks in yellow are current</p>
       <p id="currentDay" class="lead"></p>
     </header>
+    <!-- This is the schedule, starting with 7:00 AM to 7:00 PM -->
+    <!-- All elements with the description class are editable -->
     <div class="container">
-      <div class="time-block">
-        <div class="hour" id="7am">
+      <div class="time-block" id="event-content">
+        <div class="hour" id="seven-am">
           <p>7:00</p>
-          <div class="description"></div>
+          <div class="description" id="seven-event"></div>
           <button class="saveBtn">SAVE</button>
         </div>
-        <div class="hour" id="8am">
+        <div class="hour" id="eight-am">
           <p>8:00</p>
-          <div class="description"></div>
+          <div class="description" id="eight-event"></div>
           <button class="saveBtn">SAVE</button>
         </div>
-        <div class="hour" id="9am">
+        <div class="hour" id="nine-am">
           <p>9:00</p>
-          <div class="description"></div>
+          <div class="description" id="nine-event"></div>
           <button class="saveBtn">SAVE</button>
         </div>
-        <div class="hour" id="10am">
+        <div class="hour" id="ten-am">
           <p>10:00</p>
-          <div class="description"></div>
+          <div class="description" id="ten-event"></div>
           <button class="saveBtn">SAVE</button>
         </div>
-        <div class="hour" id="11am">
+        <div class="hour" id="eleven-am">
           <p>11:00</p>
-          <div class="description"></div>
+          <div class="description" id="eleven-event"></div>
           <button class="saveBtn">SAVE</button>
         </div>
-        <div class="hour" id="12pm">
+        <div class="hour" id="twelve-pm">
           <p>12:00</p>
-          <div class="description"></div>
+          <div class="description" id="twelve-event"></div>
           <button class="saveBtn">SAVE</button>
         </div>
-        <div class="hour" id="1pm">
+        <div class="hour" id="one-pm">
           <p>1:00</p>
-          <div class="description"></div>
+          <div class="description" id="one-event"></div>
           <button class="saveBtn">SAVE</button>
         </div>
-        <div class="hour" id="2pm">
+        <div class="hour" id="two-pm">
           <p>2:00</p>
-          <div class="description"></div>
+          <div class="description" id="two-event"></div>
           <button class="saveBtn">SAVE</button>
         </div>
-        <div class="hour" id="3pm">
+        <div class="hour" id="three-pm">
           <p>3:00</p>
-          <div class="description"></div>
+          <div class="description" id="three-event"></div>
           <button class="saveBtn">SAVE</button>
         </div>
-        <div class="hour" id="4pm">
+        <div class="hour" id="four-pm">
           <p>4:00</p>
-          <div class="description"></div>
+          <div class="description" id="four-event"></div>
           <button class="saveBtn">SAVE</button>
         </div>
-        <div class="hour" id="5pm">
+        <div class="hour" id="five-pm">
           <p>5:00</p>
-          <div class="description"></div>
+          <div class="description" id="five-event"></div>
           <button class="saveBtn">SAVE</button>
         </div>
-        <div class="hour" id="6pm">
+        <div class="hour" id="six-pm">
           <p>6:00</p>
-          <div class="description"></div>
+          <div class="description" id="six-event"></div>
           <button class="saveBtn">SAVE</button>
         </div>
-        <div class="hour" id="7pm">
+        <div class="hour" id="seven-pm">
           <p>7:00</p>
-          <div class="description"></div>
+          <div class="description" id="seven-pm-event"></div>
           <button class="saveBtn">SAVE</button>
         </div>
       </div>
     </div>
-
-    <div id="dialog">
-      <p>Congratulations! The event you submitted has been saved!</p>
-    </div>
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script>
-      $(function () {
-      $("#dialog").dialog({
-        autoOpen: false,
-        show: {
-            effect: "blind",
-            duration: 1000
-        }
-      });
-      $(".saveBtn").on('click', function() {
-        $("#dialog").dialog('open');
-      });
-    });
-    </script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
