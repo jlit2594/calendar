@@ -1,6 +1,6 @@
-# [Work Day Scheduler]()
+# [Work Day Scheduler](https://jlit2594.github.io/calendar/)
 
-![This is an image of the site]()
+![This is an image of the site](./Develop/assets/images/Capture.PNG)
 
 ## Purpose
 This is a handy website for workers to plan out their day. 
