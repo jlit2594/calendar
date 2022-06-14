@@ -37,7 +37,7 @@ $(".description").on('click', function () {
 
 // Function to save events. 
 function saveEvent () {
-    let eventDetails = {
+    const eventDetails = {
         sevenAm: $("#seven-event").val(),
         eightam: $("#eight-event").val(),
         nineAm: $("#nine-event").val(),
@@ -52,7 +52,7 @@ function saveEvent () {
         sixPm: $("#six-event").val(),
         sevenPm: $("#seven-pm-event").val()
     };
-    
+
     localStorage.setItem("events", JSON.stringify(eventDetails));
 };
 
